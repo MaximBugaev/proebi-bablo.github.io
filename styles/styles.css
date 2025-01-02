@@ -178,6 +178,32 @@ body {
 }
 
 @media (max-width: 720px) {
+
+    .main-menu__title {
+        font-size: 2em;
+    }
+
+    .craps {
+        padding-top: 25px;
+    }
+
+    .craps__title {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    .main-menu__start-btn {
+        font-size: 2em;
+    }
+
+    .cubes-container {
+        width: 100%;
+    }
+
+    .craps__roll-btn {
+        margin-bottom: 75px;
+    }
+
     .craps__roll-btn {
         width: auto;
     }

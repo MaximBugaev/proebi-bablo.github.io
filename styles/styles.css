@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #000000;
+    color:#ffffff;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1.25em;
+
+    background-image: url(../imgs/casino-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center center;
+}
+
+.main-menu {
+    padding-top: 50px;
+}
+
+.main-menu__title {
+    font-size: 4.5em;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.main-menu__start-btn {
+    display: block;
+    padding: 60px;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 3em;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #f34646;
+    border: none;
+    border-radius: 35px;
+
+    -webkit-box-shadow: -11px -11px 6px 0px rgba(255, 255, 255, 0.45) inset;
+    -moz-box-shadow: -11px -11px 6px 0px rgba(255, 255, 255, 0.45) inset;
+    box-shadow: -11px -11px 6px 0px rgba(255, 255, 255, 0.45) inset;
+}
+
+.main-menu__start-btn:hover {
+    background-color: #d63c3c;
+
+    transition: 0.1s;
+}
+
+.main-menu__start-btn:active {
+    background-color: #962b2b;
+
+    -webkit-box-shadow: 14px 14px 6px 0px rgba(83, 82, 82, 0.37) inset;
+    -moz-box-shadow: 14px 14px 6px 0px rgba(83, 82, 82, 0.37) inset;
+    box-shadow: 14px 14px 6px 0px rgba(83, 82, 82, 0.37) inset;
+
+    transition: 0.1s;
+}
+
+.craps {
+    display: none;
+    padding-top: 50px;
+}
+
+.craps__title {
+    font-size: 4.5em;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cubes-container {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    margin-bottom: 25px;
+}
+
+.cubes-container__cube {
+    width: 100%;
+}
+
+.cubes-container__cube:not(#f1):not(#s1) {
+    display: none;
+}
+
+.craps__bank {
+    font-size: 3em;
+    text-align: center;
+}
+
+.craps__winner-caption {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 35px;
+    color: #ca5151
+}
+
+.craps__winner-caption--won {
+    color: #649e62;
+}
+
+.craps__roll-btn {
+    display: block;
+    padding: 35px;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #f34646;
+    border: none;
+    border-radius: 20px;
+
+    -webkit-box-shadow: -11px -11px 6px 0px rgba(255, 255, 255, 0.45) inset;
+    -moz-box-shadow: -11px -11px 6px 0px rgba(255, 255, 255, 0.45) inset;
+    box-shadow: -11px -11px 6px 0px rgba(255, 255, 255, 0.45) inset;
+    margin-bottom: 50px;
+}
+
+.craps__roll-btn:hover {
+    background-color: #d63c3c;
+
+    transition: 0.1s;
+}
+
+.craps__roll-btn:active {
+    background-color: #962b2b;
+
+    -webkit-box-shadow: 14px 14px 6px 0px rgba(83, 82, 82, 0.37) inset;
+    -moz-box-shadow: 14px 14px 6px 0px rgba(83, 82, 82, 0.37) inset;
+    box-shadow: 14px 14px 6px 0px rgba(83, 82, 82, 0.37) inset;
+
+    transition: 0.1s;
+}
+
+.players {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player__name,
+.player__bet {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.player__name {
+    font-weight: 700;
+}
+
+.bet__send-btn {
+    padding: 5px;
+    border: none;
+    background-color: #49c568;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.bet__input {
+    padding: 5px;
+}
+
+.player__balance {
+    text-align: center;
+}
+
+@media (max-width: 720px) {
+    .craps__roll-btn {
+        width: auto;
+    }
+}

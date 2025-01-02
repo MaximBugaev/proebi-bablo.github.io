@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>casino.js</title>
+</head>
+<body>
+    <div class="main-menu">
+        <h1 class="main-menu__title">KTO CHERT VOSMI PISAL ETOT PIZDEC??????</h1>
+        <button class="main-menu__start-btn" onclick="openCraps()">START</button>
+    </div>
+
+    <div class="craps">
+        <h1 class="craps__title">Craps</h1>
+        <div class="cubes-container">
+            <div class="first-cube">
+                <img src="imgs/dice1.png" class="first-cube__cube cubes-container__cube" id="f1">
+                <img src="imgs/dice2.png" class="first-cube__cube cubes-container__cube" id="f2">
+                <img src="imgs/dice3.png" class="first-cube__cube cubes-container__cube" id="f3">
+                <img src="imgs/dice4.png" class="first-cube__cube cubes-container__cube" id="f4">
+                <img src="imgs/dice5.png" class="first-cube__cube cubes-container__cube" id="f5">
+                <img src="imgs/dice6.png" class="first-cube__cube cubes-container__cube" id="f6">
+            </div>
+            <div class="second-cube">
+                <img src="imgs/dice1.png" class="second-cube__cube cubes-container__cube" id="s1">
+                <img src="imgs/dice2.png" class="second-cube__cube cubes-container__cube" id="s2">
+                <img src="imgs/dice3.png" class="second-cube__cube cubes-container__cube" id="s3">
+                <img src="imgs/dice4.png" class="second-cube__cube cubes-container__cube" id="s4">
+                <img src="imgs/dice5.png" class="second-cube__cube cubes-container__cube" id="s5">
+                <img src="imgs/dice6.png" class="second-cube__cube cubes-container__cube" id="s6">
+            </div>
+        </div>
+        <p class="craps__bank">bank: 0$</p>
+        <p class="craps__winner-caption"></p>
+        <button class="craps__roll-btn">START GAME</button>
+        <div class="players">
+            <div class="player1 player">
+                <p class="player1__name player__name">ВЫ</p>
+                <p class="player__bet player__bet1">bet: 0$</p>
+                <p class="player1__balance player__balance">balance: 1500$</p>
+            </div>
+            <div class="player2 player">
+                <p class="player2__name player__name">ПРОТИВНИК</p>
+                <p class="player__bet player__bet2">bet: 0$</p>
+                <p class="player2__balance player__balance">balance: 1500$</p>
+            </div>
+        </div>
+        <audio src="sounds/9mice, Kai Angel - I Love God.mp3" id="bg-music"></audio>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
